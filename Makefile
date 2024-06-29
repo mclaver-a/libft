@@ -43,7 +43,7 @@ $(NAME): $(OBJS)
 	@echo "LIBFT CREATED!"
 
 %.o: %.c Makefile
-	@echo "Compiling object"
+	@echo "Compiled $< to $@"
 	@$(CC) $(CFLAGS) -MMD -c $< -o $@
 
 clean:
